@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bastión de Libros | Catálogo</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+  <!--  CABECERA -->
+    <header class="cabecera">
+    <div class="contenedor fila-cabecera">
+      <a class="logo" href="index.html">
+        <img src="imagenes/logo.png" alt="">
+        Bastión de Libros
+      </a>
+      <form class="buscador-general" action="#">
+        <img src="imagenes/iconos/icono-busqueda.svg" alt="">
+        <input type="search" placeholder="Buscar libros, autores, géneros..." aria-label="Buscar libros, autores, géneros">
+      </form>
+      <div class="acciones-cuenta">
+        <a href="#"><img src="imagenes/iconos/icono-cuenta.svg" alt="">Mi Cuenta</a>
+        <a href="#"><img src="imagenes/iconos/icono-carrito.svg" alt="">Carrito (0)</a>
+      </div>
+    </div>
+  </header>
+
+  <!--  MENÚ DE NAVEGACIÓN  -->
+    <nav class="menu">
+    <div class="contenedor fila-menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Categorías</a></li>
+        <li><a class="activo" href="catalogo.html">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="catalogo">
+      <div class="contenedor">
+        <h1 class="titulo-seccion">Catálogo de libros</h1>
+
+        <!-- Filtros por categoría -->
+        <ul class="filtros">
+          <li><a class="activo" href="#">Todas</a></li>
+          <li><a href="#">Ficción</a></li>
+          <li><a href="#">No ficción</a></li>
+          <li><a href="#">Infantil</a></li>
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">Ciencia</a></li>
+        </ul>
+
+        <!-- Cuadrícula de 15 libros (5 por fila) -->
+        <div class="cuadricula">
+
+          <!-- Fila 1 -->
+          <article class="ficha">
+            <img src="imagenes/libros/portada_don_quijote_de_la_mancha.jpg" alt="Portada de Don Quijote de la Mancha">
+            <h3>Don Quijote de la Mancha</h3>
+            <p class="autor">Miguel de Cervantes</p>
+            <div class="ficha-pie">
+              <p class="precio">$19.99</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_el_hobbit.jpg" alt="Portada de El hobbit">
+            <h3>El hobbit</h3>
+            <p class="autor">J.R.R. Tolkien</p>
+            <div class="ficha-pie">
+              <p class="precio">$14.50</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_orgullo_y_prejuicio.jpg" alt="Portada de Orgullo y prejuicio">
+            <h3>Orgullo y prejuicio</h3>
+            <p class="autor">Jane Austen</p>
+            <div class="ficha-pie">
+              <p class="precio">$11.99</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_1984.jpg" alt="Portada de 1984">
+            <h3>1984</h3>
+            <p class="autor">George Orwell</p>
+            <div class="ficha-pie">
+              <p class="precio">$11.50</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_frankenstein.jpg" alt="Portada de Frankenstein">
+            <h3>Frankenstein</h3>
+            <p class="autor">Mary Shelley</p>
+            <div class="ficha-pie">
+              <p class="precio">$9.50</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+
+          <!-- Fila 2 -->
+          <article class="ficha">
+            <img src="imagenes/libros/portada_cien_anos_de_soledad.jpg" alt="Portada de Cien años de soledad">
+            <h3>Cien años de soledad</h3>
+            <p class="autor">Gabriel García Márquez</p>
+            <div class="ficha-pie">
+              <p class="precio">$22.99</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_el_principito.jpg" alt="Portada de El principito">
+            <h3>El principito</h3>
+            <p class="autor">Antoine de Saint-Exupéry</p>
+            <div class="ficha-pie">
+              <p class="precio">$8.99</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_dracula.jpg" alt="Portada de Drácula">
+            <h3>Drácula</h3>
+            <p class="autor">Bram Stoker</p>
+            <div class="ficha-pie">
+              <p class="precio">$12.50</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_mujercitas.jpg" alt="Portada de Mujercitas">
+            <h3>Mujercitas</h3>
+            <p class="autor">Louisa May Alcott</p>
+            <div class="ficha-pie">
+              <p class="precio">$10.99</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_crimen_y_castigo.jpg" alt="Portada de Crimen y castigo">
+            <h3>Crimen y castigo</h3>
+            <p class="autor">Fiódor Dostoyevski</p>
+            <div class="ficha-pie">
+              <p class="precio">$13.99</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+
+          <!-- Fila 3 -->
+          <article class="ficha">
+            <img src="imagenes/libros/portada_los_miserables.jpg" alt="Portada de Los miserables">
+            <h3>Los miserables</h3>
+            <p class="autor">Victor Hugo</p>
+            <div class="ficha-pie">
+              <p class="precio">$18.50</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_jane_eyre.jpg" alt="Portada de Jane Eyre">
+            <h3>Jane Eyre</h3>
+            <p class="autor">Charlotte Brontë</p>
+            <div class="ficha-pie">
+              <p class="precio">$11.00</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_cumbres_borrascosas.jpg" alt="Portada de Cumbres borrascosas">
+            <h3>Cumbres borrascosas</h3>
+            <p class="autor">Emily Brontë</p>
+            <div class="ficha-pie">
+              <p class="precio">$10.50</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_un_mundo_feliz.jpg" alt="Portada de Un mundo feliz">
+            <h3>Un mundo feliz</h3>
+            <p class="autor">Aldous Huxley</p>
+            <div class="ficha-pie">
+              <p class="precio">$12.00</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+          <article class="ficha">
+            <img src="imagenes/libros/portada_el_retrato_de_dorian_grey.jpg" alt="Portada de El retrato de Dorian Gray">
+            <h3>El retrato de Dorian Gray</h3>
+            <p class="autor">Oscar Wilde</p>
+            <div class="ficha-pie">
+              <p class="precio">$9.99</p>
+              <a class="boton-oscuro" href="#">Comprar</a>
+            </div>
+          </article>
+
+        </div>
+    </div>
+   </section>
+ </main>
+        <!-- ====== PIE DE PÁGINA ====== -->
+  <footer class="pie" id="contacto">
+    <div class="contenedor">
+      <div class="fila-pie">
+        <div class="pie-columna">
+          <p class="logo-pie">Bastión de Libros</p>
+          <p>Tu librería de confianza en línea. Envío rápido y catálogo garantizado.</p>
+        </div>
+        <div class="pie-columna">
+          <h4><span class="barra">Sobre nosotros</h4>
+          <p>Libros, cultura y comunidad en un solo lugar.</p>
+        </div>
+        <div class="pie-columna">
+          <h4><span class="barra">Redes</h4>
+          <p><a href="#">Instagram</a> / <a href="#">X</a> / <a href="#">Facebook</a></p>
+        </div>
+        <div class="pie-columna">
+          <h4><span class="barra">Contacto</h4>
+          <p><a href="mailto:contacto@bastiondelibros.com">contacto@bastiondelibros.com</a></p>
+        </div>
+      </div>
+      <p class="derechos">2026 Bastión de Libros.</p>
+    </div>
+  </footer>
+  </body>
+</html>

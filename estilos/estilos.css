@@ -1,0 +1,530 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('../fuentes/cormorant-garamond-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fuentes/inter-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fuentes/inter-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fuentes/inter-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fuentes/inter-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ---------- 1. REINICIO Y BASE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #242424;
+  background-color: white;
+}
+
+a {
+  color: #111111;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Caja centrada que limita el ancho del contenido */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- 2. TÍTULOS REUTILIZABLES ---------- */
+.titulo-seccion {
+  margin-bottom: 20px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111111;
+}
+
+/* ---------- 3. BOTÓN ---------- */
+.boton-oscuro {
+  display: inline-block;
+  padding: 11px 24px;
+  background-color: #111111;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.boton-oscuro:hover {
+  background-color: #D71920;
+}
+
+/* ---------- 4. CABECERA ---------- */
+.cabecera {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #D9D7D2;
+  padding: 16px 0;
+}
+
+.fila-cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.logo img {
+  width: 28px;
+  height: 32px;
+}
+
+.buscador-general {
+  flex: 1;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  border: 1px solid #777777;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.buscador-general img {
+  width: 18px;
+  height: 18px;
+}
+
+.buscador-general input {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  background-color: white;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 14px;
+}
+
+.acciones-cuenta {
+  display: flex;
+  align-items: center;
+}
+
+.acciones-cuenta a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 28px;
+  font-size: 14px;
+}
+
+.acciones-cuenta a:hover {
+  color: #D71920;
+}
+
+.acciones-cuenta img {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- 5. MENÚ DE NAVEGACIÓN ---------- */
+.menu {
+  background-color: white;
+  border-bottom: 1px solid #D9D7D2;
+}
+
+.menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  display: block;
+  padding: 14px 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  color: #D71920;
+}
+
+.menu a.activo {
+  font-weight: 700;
+}
+
+/* ---------- 6. PORTADA (búsqueda + banner) ---------- */
+.portada {
+  padding: 36px 0;
+}
+
+.fila-portada {
+  display: flex;
+  gap: 32px;
+}
+
+/* Búsqueda rápida: sin tarjeta, separada del banner por una línea vertical */
+.busqueda-rapida {
+  width: 280px;
+  padding-right: 32px;
+  border-right: 1px solid #D9D7D2;
+}
+
+.busqueda-rapida h2 {
+  margin-bottom: 20px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.busqueda-rapida label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.busqueda-rapida input,
+.busqueda-rapida select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #D9D7D2;
+  background-color: white;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 14px;
+}
+
+.busqueda-rapida .boton-oscuro {
+  width: 100%;
+}
+
+/* Banner: texto a la izquierda e imagen a la derecha, sin caja de fondo */
+.banner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.banner-texto {
+  width: 360px;
+}
+
+.banner h1 {
+  margin-bottom: 16px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #111111;
+}
+
+.descripcion {
+  margin-bottom: 24px;
+}
+
+.banner-imagen {
+  flex: 1;
+}
+
+.banner-imagen img {
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- 7. LIBROS DESTACADOS ---------- */
+.destacados {
+  padding: 12px 0 48px 0;
+}
+
+.encabezado-seccion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.enlace-ver {
+  font-size: 14px;
+}
+
+.enlace-ver:hover {
+  color: #D71920;
+}
+
+.fila-tarjetas {
+  display: flex;
+  gap: 24px;
+}
+
+.tarjeta {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background-color: #FFFFFF;
+  border: 1px solid #D9D7D2;
+  border-radius: 8px;
+}
+
+.tarjeta:hover {
+  border: 1px solid #D71920;
+}
+
+.tarjeta img {
+  width: 90px;
+  height: auto;
+  align-self: flex-start;
+}
+
+.tarjeta-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-info h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #111111;
+}
+
+.autor {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.precio {
+  margin-top: auto;
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111111;
+}
+
+/* ---------- 8. CATÁLOGO ---------- */
+.catalogo {
+  padding: 36px 0 56px 0;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.filtros a {
+  display: block;
+  padding: 8px 18px;
+  background-color: #FFFFFF;
+  border: 1px solid #D9D7D2;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filtros a:hover {
+  border: 1px solid #D71920;
+  color: #D71920;
+}
+
+.filtros a.activo {
+  background-color: #111111;
+  border: 1px solid #111111;
+  color: #FFFFFF;
+}
+
+/* 5 fichas por fila: 5 x 18.4% = 92%; el 8% sobrante se reparte entre ellas */
+.cuadricula {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 24px;
+}
+
+.ficha {
+  width: 18.4%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #D9D7D2;
+  border-radius: 8px;
+}
+
+.ficha:hover {
+  border: 1px solid #D71920;
+}
+
+.ficha img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.ficha h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #111111;
+}
+
+.ficha-pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.ficha-pie .precio {
+  margin: 0;
+  font-size: 16px;
+}
+
+.ficha-pie .boton-oscuro {
+  padding: 8px 14px;
+}
+
+/* ---------- 9. PIE DE PÁGINA ---------- */
+.pie {
+  padding: 36px 0 20px 0;
+  border-top: 1px solid #D9D7D2;
+}
+
+.fila-pie {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.pie-columna {
+  flex: 1;
+  font-size: 14px;
+}
+
+.logo-pie {
+  margin-bottom: 8px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.pie h4 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.pie a:hover {
+  color: #D71920;
+}
+
+.derechos {
+  margin-top: 28px;
+  padding-top: 14px;
+  border-top: 1px solid #D9D7D2;
+  font-size: 13px;
+}
+
+/* ---------- 10. ADAPTABILIDAD (pantallas pequeñas) ---------- */
+@media (max-width: 900px) {
+  .contenedor {
+    padding: 0 20px;
+     .busqueda-rapida {
+    padding-right: 0;
+    border-right: none;
+  }
+  }
+
+  .fila-cabecera,
+  .fila-portada,
+  .banner,
+  .fila-tarjetas,
+  .fila-pie {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buscador-general {
+    max-width: 100%;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .busqueda-rapida,
+  .banner-texto {
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 42px;
+  }
+
+  .ficha {
+    width: 48%;
+  }
+}
